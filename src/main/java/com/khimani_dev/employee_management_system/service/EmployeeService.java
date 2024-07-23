@@ -1,4 +1,7 @@
 package com.khimani_dev.employee_management_system.service;
 
-public class EmployeeService {
+import com.khimani_dev.employee_management_system.dto.EmployeeDto;
+
+public interface EmployeeService {
+    EmployeeDto createEmployee(EmployeeDto employeeDto);
 }

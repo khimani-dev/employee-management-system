@@ -5,8 +5,8 @@ import com.khimani_dev.employee_management_system.entity.Employee;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
-@NoArgsConstructor
+//@AllArgsConstructor
+//@NoArgsConstructor
 public class EmployeeMapper {
 
     public static EmployeeDto mapToEmployeeDto(Employee employee){
@@ -17,7 +17,7 @@ public class EmployeeMapper {
                    employee.getEmail()
            );
     }
-    public static Employee mapToEmployee(EmployeeDto employeeDto) {
+    public static Employee mapToEmployee(EmployeeDto employeeDto) { //converts employeeDto to employee Jpa Entity
         return new Employee(
                 employeeDto.getId(),
                 employeeDto.getFirstName(),
